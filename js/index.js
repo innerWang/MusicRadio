@@ -88,7 +88,7 @@ var Footer = {
 	render: function(){
 		var _this = this
 		$.ajax({
-			url: '/json/channels.json',
+			url: './json/channels.json',
 			dataType: 'json'
 		}).done(function(ret){
 			console.log(ret)
