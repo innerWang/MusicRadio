@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<!-- 设置请求来源为空，这样百度fm认为是用户打开的请求，会允许播放 -->
+	<meta name="referrer" content="never">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Music Radio</title>
 	<link rel="stylesheet" href="css/iconfont.css">
 	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css">
 	<script src="//cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
@@ -14,9 +17,9 @@
 			<div class="aside">
 				<figure></figure>
 				<div class="control">
-					<span class="iconfont icon-collect"></span>
-					<span class="iconfont icon-play"></span>
-					<span class="iconfont icon-next"></span>
+					<span class="iconfont icon-collect btn-collect"></span>
+					<span class="iconfont icon-play btn-play"></span>
+					<span class="iconfont icon-next btn-next"></span>
 				</div>
 			</div>
 			<div class="detail">
@@ -29,24 +32,24 @@
 					<span><i class="iconfont icon-like"></i>666</span>
 				</div>
 				<div class="music-progress">
-					<div class="current-time">00:00</div>
+					<div class="current-time">02:34</div>
 					<div class="bar">
 						<div class="progress-now"></div>
 					</div>
 					<div class="total-time">05:00</div>
 				</div>
 				<div class="lyric">
-					<p>盼我封魔</p>
+					<p>盼我疯魔</p>
 				</div>
 			</div>
 		</main>
 		<footer>
 			<div class="layout">
-				<span class="iconfont icon-left"></span>
+				<span class="iconfont icon-left disabled"></span>
 				<span class="iconfont icon-right"></span>
 				<div class="music-box">
 					<ul>
-						<li>
+			<!-- <li>
 							<div class="cover" style="background-image: url(http://img.bimg.126.net/photo/ZZ5EGyuUCp9hBPk6_s4Ehg==/5727171351132208489.jpg)"></div>
 							<h3>流行</h3>
 						</li>
@@ -60,23 +63,16 @@
 						</li>
 						<li>
 							<div class="cover" style="background-image: url(http://img.bimg.126.net/photo/ZZ5EGyuUCp9hBPk6_s4Ehg==/5727171351132208489.jpg)"></div>
-							<h3>80后</h3>
-						</li>
-						<li>
-							<div class="cover" style="background-image: url(http://img.bimg.126.net/photo/ZZ5EGyuUCp9hBPk6_s4Ehg==/5727171351132208489.jpg)"></div>
-							<h3>90后</h3>
-						</li>
-						<li>
-							<div class="cover" style="background-image: url(http://img.bimg.126.net/photo/ZZ5EGyuUCp9hBPk6_s4Ehg==/5727171351132208489.jpg)"></div>
 							<h3>00后</h3>
-						</li>
+						</li> -->
 					</ul>
 				</div>
 			</div>
 		</footer>
 	</section>
-	<section id="page-cover"></section>
+	<!-- <section id="page-cover"></section> -->
 	<div class="bg"></div>
+	<script src="js/index.js"></script>
 </body>
 </html>
 
