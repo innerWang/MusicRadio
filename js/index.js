@@ -88,10 +88,10 @@ var Footer = {
 	render: function(){
 		var _this = this
 		$.ajax({
-			url: '//api.jirengu.com/fm/getChannels.php',
+			url: '/json/channels.json',
 			dataType: 'json'
 		}).done(function(ret){
-			//console.log(ret)
+			console.log(ret)
 			_this.renderFooter(ret.channels)
 		}).fail(function(){
 			console.log('err:get data failed!')
